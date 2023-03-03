@@ -1,0 +1,47 @@
+nav li{
+    display:inline-block;
+    padding-inline: 1rem;
+    
+}
+img.logo{
+    float:left;
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+.pageContainer{
+    position:relative;
+    min-height:100vh;
+}
+.contentWrap{
+    padding-bottom:2.5rem;
+}
+footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:2.5rem;
+}
+.skillcard{
+    display:inline-block;
+    position:relative;
+    transform-style:preserve-3d;
+    transition:all .5s ease;
+}
+.cardfront{
+    position: absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+}
+.cardback{
+    position: absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+    background-color: aqua;
+    transform: rotateY(180);
+}
+.skillcard:hover{
+    transform: rotateY(180deg);
+}

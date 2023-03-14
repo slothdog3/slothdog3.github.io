@@ -1,47 +1,52 @@
-nav li{
-    display:inline-block;
-    padding-inline: 1rem;
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size:16px;
+}
+header{
+    position:absolute;
+    overflow: auto;
+    top:1rem;
+    width:100%;
+    height:4rem;
+    border-bottom: .125rem gold solid;
+}
+header h1{
+    display:inline;
+    margin:1rem 0rem 1rem 2rem;
+    font-size:2rem;
+}
+nav{
+    display:inline;
     
 }
-img.logo{
-    float:left;
-    height:100%;
-    width:100%;
-    object-fit: cover;
+ul{
+    margin:1rem 2rem 1rem 0rem;
+    list-style-type: none;
+    float:right; 
 }
-.pageContainer{
-    position:relative;
-    min-height:100vh;
+nav li{
+    display:inline;
 }
-.contentWrap{
-    padding-bottom:2.5rem;
+header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size:1rem;
+    padding:1rem;
+}
+.main{
+    margin:5rem;
 }
 footer{
     position:absolute;
     bottom:0;
     width:100%;
     height:2.5rem;
+    border-top:.125rem gold solid;
 }
-.skillcard{
-    display:inline-block;
-    position:relative;
-    transform-style:preserve-3d;
-    transition:all .5s ease;
-}
-.cardfront{
-    position: absolute;
-    width:100%;
-    height:100%;
-    backface-visibility: hidden;
-}
-.cardback{
-    position: absolute;
-    width:100%;
-    height:100%;
-    backface-visibility: hidden;
-    background-color: aqua;
-    transform: rotateY(180);
-}
-.skillcard:hover{
-    transform: rotateY(180deg);
+footer h3{
+    margin-left:2rem;
 }

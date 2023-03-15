@@ -30,6 +30,9 @@ header h1{
     display:inline;
     margin:0rem 0rem 1rem 25%;
     font-size:2rem;
+    overflow:hidden;
+    transition: all .5s ease;
+
 }
 nav{
     display:inline;
@@ -50,8 +53,8 @@ header a{
     text-transform: uppercase;
     font-weight:bold;
     font-size:1rem;
-    padding:.5rem;
     border-radius:40px;
+    padding: .5rem;
     transition: all .5s ease;
    
 }
@@ -66,10 +69,14 @@ header a:active{
 .main{
     grid-row:2/3;
     width:fit-content;
-    margin: 2rem 10% 0rem 15%;
+    margin: 2rem 10% 2rem 15%;
 }
 .main h2{
     padding:2rem 0rem 1rem 0rem;
+}
+.main p{
+    margin-left:2rem;
+    margin-top:.5rem;
 }
 footer{
     grid-row:3/4;
@@ -89,4 +96,19 @@ footer a{
 footer a:hover{
     text-decoration: underline;
     color:forestgreen;
+}
+@media only screen and (max-width:768px){
+    header{
+        height:3rem;
+    }
+    header h1{
+        font-size: 1.5rem;
+        margin-left:15%;
+    }
+    header ul{
+        margin-top:.5rem;
+    }
+    header a{
+        font-size:.75rem;
+    }
 }

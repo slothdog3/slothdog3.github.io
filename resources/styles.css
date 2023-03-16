@@ -15,36 +15,40 @@ body{
     position:relative;
 }
 header{
-    display:grid;
-    grid-template-columns:minmax(195px,1fr) minmax(450px,1fr);
-    grid-row:1/2;
     position:absolute;
     overflow: hidden;
     top:1rem;
     width:100%;
     height:4rem;
-    border-bottom: .125rem hsla(0, 0%, 0%,1) solid;
+    border-bottom: .125rem hsla(0, 0%, 0%,.6) solid;
 }
-header h1{
-    grid-column: 1/2;
-    display:inline;
-    margin:0rem 0rem 1rem 25%;
-    font-size:2rem;
-    overflow:hidden;
-    transition: all .5s ease;
-
+.checkbtn{
+    font-size:1.25rem;
+    color:black;
+    float:right;
+    line-height:2rem;
+    margin-right:7.5%;
+    cursor:pointer;
+    display:none;
+}
+#check{
+    display:none;
 }
 nav{
     display:inline;
-    grid-column: 2/3;
+}
+.name{
+    font-size:2rem;
+    font-weight: bold;
+    margin-left:10%;
 }
 ul{
-    margin:1rem 20% 1rem 0rem;
+    margin:1rem 10% 1rem 0rem;
     list-style-type: none;
     float:right; 
 }
 nav li{
-    display:inline;
+    display:inline-block;
 
 }
 header a{
@@ -84,7 +88,7 @@ footer{
     bottom:0;
     width:100%;
     height:2.5rem;
-    border-top: .125rem hsla(0, 0%, 0%,1) solid;
+    border-top: .125rem hsla(0, 0%, 0%,.6) solid;
 }
 footer h3{
     text-align: center;
@@ -101,14 +105,55 @@ footer a:hover{
     header{
         height:3rem;
     }
-    header h1{
+    .name{
         font-size: 1.5rem;
-        margin-left:15%;
+        margin-left:10%;
     }
     header ul{
         margin-top:.5rem;
+        margin-right:5%;
     }
     header a{
         font-size:.75rem;
+        
     }
+}
+@media only screen and (max-width:550px){
+   header{
+    position:fixed;
+    top:0;
+    text-align: justify;
+   }
+   .name{
+    line-height:2.5rem;
+   }
+    .checkbtn{
+    display:block;
+    line-height:2.5rem;
+
+   }
+   ul{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background-color: white;
+    top:2.65rem;
+    left:-100%;
+    text-align: center;
+   }
+   nav li{
+    display:block;
+    padding:1.5rem;
+    margin:50px 0;
+    line-height: 30px;
+   }
+   #check:checked~ul{
+    left:0;
+   }
+   .main{
+    margin-top:1rem;
+   }
+   .main h2{
+    padding-top:1rem;
+   }
 }

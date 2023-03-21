@@ -95,6 +95,14 @@ nav li a:active{
     grid-template-rows: 250px 250px;
     grid-auto-rows: 250px;
 }
+#rps{
+    grid-area:1/1/2/2;
+
+}
+
+#rps a:hover{
+    border: 2px solid grey;
+}
 #PWLaser{
     grid-area:1/1/2/2;
 }
@@ -111,6 +119,11 @@ nav li a:active{
     background-image: url(matlabProj2.PNG);
     background-size:contain;
     background-repeat: no-repeat;
+}
+.skillsDiv .fa-brands{
+    font-size: 4rem;
+    margin-right: 1rem;
+    color: #000000;
 }
 footer{
     grid-row:3/4;
